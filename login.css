@@ -1,0 +1,62 @@
+body{
+     background-color: black;
+     height:100%;
+     width:100%;
+}
+#box{
+position:absolute;
+height:450px;
+width:600px;
+background-color: rgb(248, 249, 252);
+border:solid 1px rgba(250, 249, 245, 0.966);
+margin-left:200px;
+margin-right:200px;
+top:100px;
+}
+table{position:absolute;left:20px;right:30px;empty-cells: hide;}
+#denglu{
+height:45px;
+width:240px;
+text-decoration: none;
+background-color:rgb(76, 165, 253);
+color:rgb(238, 241, 250);
+font-size:20px;
+border:solid 1px rgb(157, 158, 160);
+}
+#zhuce{
+height:45px;
+width:240px;
+border-radius: 10px rgb(43, 41, 41);
+text-decoration: none;
+color:rgb(106, 107, 110);
+font-size:20px;
+border:solid 1px rgb(157, 158, 160);
+}
+#number{
+     width:500px;
+     height:45px;
+     font-size:17px;
+     color:rgb(125, 126, 128);
+     }
+#password{
+width:500px;
+height:45px;
+font-size:17px;
+color:rgb(128, 123, 123);
+}
+#lianjie1{
+text-decoration: none;
+color:dodgerblue;
+}
+#lianjie2{text-decoration: none;color:rgb(106, 107, 110);}
+tr{
+     height:45px;
+     width:500px;
+
+}
+img{width:20px;height:20px;}
+span{color:rgba(99, 105, 110, 0.979)}
+#size1{font-size:18px;}
+#size2{font-size:15px;}
+div table #item th a{color:rgb(33, 77, 211);}
+div table tr td span a{color:black;}
