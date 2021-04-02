@@ -1,0 +1,6 @@
+var str = 'today is a happy day'
+function change(){
+  var str1=str.toUpperCase();
+  document.write(str1);
+}
+change(str);     //'Today Is A Happy Day'
