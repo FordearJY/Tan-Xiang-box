@@ -1,0 +1,21 @@
+function Student(name) { 
+	function People(name) {
+      console.log("Hi! This is "+name+"!");
+	}
+	People.prototype.sleep = function(time) {
+		setTimeout(function(){
+      console.log("Wake up after "+time);
+    },time*1000)
+	}
+	 
+People.prototype.sleepFirst = function(time) {
+    setTimeout(function(){
+      console.log("Wake up after "+time);
+    },time*1000)
+	}
+People.prototype.study = function(course) {
+		console.log("Study "+course+"~");
+	}
+	 
+	return new People(name);
+}
