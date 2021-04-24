@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>接口实现</title>
+  <link rel="stylesheet" href="js.css"/>
+</head>
+<body>
+	<ul></ul>
+  <script>
+    var xhr = new XMLHttpRequest();
+    var ul = document.querySelector('ul');
+    //初始化一个get请求
+    xhr.open("get", "http://musicapi.leanapp.cn/personalized", true);
+    //接收返回值
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState === 4) {
+        if ((xhr.status >= 200 && xhr.status < 300) || xhr.status == 304) {
+          const res = JSON.parse(xhr.responseText);
+          //打印出返回值
+          console.log(res)
+          for (var i = 0; i < 30; i++) {     
+            //取目标数据
+            var img = document.createElement('img');
+            var li = document.createElement('li');
+            var p = document.createElement('p');
+            var div = document.createElement('div');
+            ul.insertBefore(li, ul.children[0]);
+            img.src = res.result[i].picUrl;
+            p.innerText = res.result[i].name;
+            div.innerHTML = "点击量" + parseInt(res.result[i].playCount / 10000) + "W";
+            //添加到列表
+            li.append(img);
+            li.append(div);
+            li.append(p);
+          }
+        } else {
+          console.log("请求失败")
+        }
+      }
+    }
+    xhr.send();
+  </script>
+</body>
+</html>
