@@ -1,0 +1,27 @@
+img {
+    width: 160px;
+    height: 125px;
+  }
+
+  div {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+  }
+
+  ul {
+    margin-top: 40px;
+    margin-left: 100px;
+    width: 999px;
+    justify-content: space-between;
+  }
+
+  li {
+    position: relative;
+    float: left;
+    margin-bottom: 20px;
+    width: 160px;
+    height: 180px;
+    margin-right: 30px;
+    list-style: none;
+  }
